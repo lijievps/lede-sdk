@@ -1,0 +1,9 @@
+Package/libopenssl/subdir = base
+Package/libpcre/subdir = packages
+Package/libpcre16/subdir = packages
+Package/libpcrecpp/subdir = packages
+Package/luci-app-shadowsocksR/subdir = base
+Package/luci-app-shadowsocksR-GFW/subdir = base
+Package/openssl-util/subdir = base
+Package/zlib/subdir = base
+Package/zlib-dev/subdir = base

@@ -1,0 +1,46 @@
+Source-Makefile: package/openwrt-ssr/Makefile
+Package: luci-app-shadowsocksR
+Submenu: 3. Applications
+Version: 1.2.1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +ipset +ip +iptables-mod-tproxy +libpcre +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: openssl
+Section: luci
+Category: LuCI
+Repository: base
+Title: shadowsocksR-libev LuCI interface
+Maintainer: yushi studio <ywb94@qq.com>
+Source: openwrt-ssr-1.2.1.tar.gz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	LuCI Support for shadowsocksr-libev Client and Server.
+https://github.com/ywb94/openwrt-ssr
+yushi studio <ywb94@qq.com>
+@@
+
+Package: luci-app-shadowsocksR-GFW
+Submenu: 3. Applications
+Version: 1.2.1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +ipset +ip +iptables-mod-tproxy +libpcre +zlib +dnsmasq-full +coreutils +coreutils-base64
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: openssl
+Section: luci
+Category: LuCI
+Repository: base
+Title: shadowsocksR-libev LuCI interface
+Maintainer: yushi studio <ywb94@qq.com>
+Source: openwrt-ssr-1.2.1.tar.gz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	LuCI Support for shadowsocksr-libev GFW.
+https://github.com/ywb94/openwrt-ssr
+yushi studio <ywb94@qq.com>
+@@
+
+

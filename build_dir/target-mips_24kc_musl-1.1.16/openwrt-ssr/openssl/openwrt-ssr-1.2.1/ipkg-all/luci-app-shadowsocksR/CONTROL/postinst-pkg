@@ -1,0 +1,19 @@
+#!/bin/sh
+
+if [ -z "${IPKG_INSTROOT}" ]; then
+	uci -q batch <<-EOF >/dev/null
+		delete firewall.shadowsocksr
+		set firewall.shadowsocksr=include
+		set firewall.shadowsocksr.type=script
+		set firewall.shadowsocksr.path=/var/etc/shadowsocksr.include
+		set firewall.shadowsocksr.reload=0
+		commit firewall
+EOF
+fi
+
+if [ -z "${IPKG_INSTROOT}" ]; then
+	( . /etc/uci-defaults/luci-shadowsocksr ) && rm -f /etc/uci-defaults/luci-shadowsocksr
+	chmod 755 /etc/init.d/shadowsocksr >/dev/null 2>&1
+	/etc/init.d/shadowsocksr enable >/dev/null 2>&1
+fi
+exit 0

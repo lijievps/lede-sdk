@@ -1,0 +1,22 @@
+In file included from conftest.c:26:0:
+/home/lijievps/toolchain/lede-sdk-17.01.4-ar71xx-generic_gcc-5.4.0_musl-1.1.16.Linux-x86_64/staging_dir/toolchain-mips_24kc_gcc-5.4.0_musl-1.1.16/include/fortify/stdio.h: In function 'snprintf':
+/home/lijievps/toolchain/lede-sdk-17.01.4-ar71xx-generic_gcc-5.4.0_musl-1.1.16.Linux-x86_64/staging_dir/toolchain-mips_24kc_gcc-5.4.0_musl-1.1.16/include/fortify/stdio.h:99:2: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+  return __orig_snprintf(__s, __n, __f, __builtin_va_arg_pack());
+  ^
+/home/lijievps/toolchain/lede-sdk-17.01.4-ar71xx-generic_gcc-5.4.0_musl-1.1.16.Linux-x86_64/staging_dir/toolchain-mips_24kc_gcc-5.4.0_musl-1.1.16/include/fortify/stdio.h:99:2: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+/home/lijievps/toolchain/lede-sdk-17.01.4-ar71xx-generic_gcc-5.4.0_musl-1.1.16.Linux-x86_64/staging_dir/toolchain-mips_24kc_gcc-5.4.0_musl-1.1.16/include/fortify/stdio.h: In function 'sprintf':
+/home/lijievps/toolchain/lede-sdk-17.01.4-ar71xx-generic_gcc-5.4.0_musl-1.1.16.Linux-x86_64/staging_dir/toolchain-mips_24kc_gcc-5.4.0_musl-1.1.16/include/fortify/stdio.h:108:3: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+   __r = __orig_snprintf(__s, __b, __f, __builtin_va_arg_pack());
+   ^
+/home/lijievps/toolchain/lede-sdk-17.01.4-ar71xx-generic_gcc-5.4.0_musl-1.1.16.Linux-x86_64/staging_dir/toolchain-mips_24kc_gcc-5.4.0_musl-1.1.16/include/fortify/stdio.h:108:3: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+/home/lijievps/toolchain/lede-sdk-17.01.4-ar71xx-generic_gcc-5.4.0_musl-1.1.16.Linux-x86_64/staging_dir/toolchain-mips_24kc_gcc-5.4.0_musl-1.1.16/include/fortify/stdio.h:112:3: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+   __r = __orig_sprintf(__s, __f, __builtin_va_arg_pack());
+   ^
+conftest.c: At top level:
+conftest.c:28:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ main ()
+ ^
+conftest.c: In function 'main':
+conftest.c:30:36: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+ char x[42U], fodder = 0;if (fodder > -1000 && fgets(x,1000,stdin)) puts(x)
+                                    ^

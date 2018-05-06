@@ -1,0 +1,12 @@
+libc.so
+libgcc_s.so.1
+libpcre.so
+libpcre.so.1
+libpcre.so.1.2.9
+libpcrecpp.so.0
+libpcrecpp.so.0.0.1
+libpcreposix.so.0
+libpcreposix.so.0.0.5
+libstdc++.so.6
+libstdc++.so.6.0.21
+libstdc++.so.6.0.21-gdb.py

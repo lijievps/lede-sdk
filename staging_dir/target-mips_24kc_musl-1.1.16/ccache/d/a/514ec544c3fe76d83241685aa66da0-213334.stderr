@@ -1,0 +1,3 @@
+ev.c:1825:31: warning: 'ev_default_loop_ptr' initialized and declared 'extern'
+   EV_API_DECL struct ev_loop *ev_default_loop_ptr = 0; /* needs to be initialised to make it a definition despite extern */
+                               ^

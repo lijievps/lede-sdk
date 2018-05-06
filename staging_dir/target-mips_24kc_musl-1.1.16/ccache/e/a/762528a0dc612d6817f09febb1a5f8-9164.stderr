@@ -1,0 +1,4 @@
+conftest.c: In function 'main':
+conftest.c:30:36: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+ char x[42U], fodder = 0;if (fodder > -1000 && fgets(x,1000,stdin)) puts(x)
+                                    ^
